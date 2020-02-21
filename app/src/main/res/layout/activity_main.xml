@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/thecheezery"></ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:background="@color/purpleishGrey">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/dustyWhite"
+            android:text="@string/welcome"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-light"
+            android:textStyle="italic"
+            android:layout_marginHorizontal="40dp"
+            android:textColor="@color/dustyWhite"
+            android:text="@string/description"></TextView>
+        <Button
+            android:id="@+id/btn_getstarted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/dustyWhite"
+            android:layout_gravity="center"
+            android:textSize="18sp"
+            android:text="@string/get_started"
+            android:paddingHorizontal="30dp"
+            android:textColorHighlight="@color/dustyWhite"
+            android:background="@drawable/btn_rounded"></Button>
+    </LinearLayout>
+
+</LinearLayout>

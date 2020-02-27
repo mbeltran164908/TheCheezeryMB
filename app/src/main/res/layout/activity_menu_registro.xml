@@ -19,7 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:fontFamily="sans-serif-light"
+        android:fontFamily="@string/light"
         android:text="OUR MENU"
         android:textAlignment="center"
         android:textSize="24sp" />
@@ -39,15 +39,19 @@
                 android:id="@+id/btn_coldDrink"
                 android:layout_marginRight="2dp"
                 android:background="@drawable/color_degradado"
-                android:text="cold drinks"
-                android:textColor="@color/dustyWhite" />
+                android:textAllCaps="false"
+                android:text="@string/cold_drniks"
+                android:textColor="@color/dustyWhite"
+                android:textSize="18dp"/>
 
             <Button
                 android:id="@+id/btn_hotDrink"
                 android:layout_marginLeft="2dp"
                 android:background="@drawable/color_degradado"
-                android:text="cold drinks"
-                android:textColor="@color/dustyWhite" />
+                android:text="@string/hot_drinks"
+                android:textAllCaps="false"
+                android:textColor="@color/dustyWhite"
+                android:textSize="18dp"/>
         </TableRow>
 
         <TableRow
@@ -59,15 +63,19 @@
                 android:id="@+id/btn_sweets"
                 android:layout_marginRight="2dp"
                 android:background="@drawable/color_degradado"
-                android:text="sweets"
-                android:textColor="@color/dustyWhite" />
+                android:text="@string/sweets"
+                android:textAllCaps="false"
+                android:textColor="@color/dustyWhite"
+                android:textSize="18dp"/>
 
             <Button
                 android:id="@+id/btn_salties"
                 android:layout_marginLeft="2dp"
                 android:background="@drawable/color_degradado"
-                android:text="salties"
-                android:textColor="@color/dustyWhite" />
+                android:text="@string/salties"
+                android:textAllCaps="false"
+                android:textColor="@color/dustyWhite"
+                android:textSize="18dp"/>
         </TableRow>
 
         <TableRow
@@ -78,15 +86,19 @@
                 android:id="@+id/btn_combos"
                 android:layout_marginRight="2dp"
                 android:background="@drawable/color_degradado"
-                android:text="combos"
-                android:textColor="@color/dustyWhite" />
+                android:text="@string/combos"
+                android:textAllCaps="false"
+                android:textColor="@color/dustyWhite"
+                android:textSize="18dp"/>
 
             <Button
                 android:id="@+id/btn_personalized"
                 android:layout_marginLeft="2dp"
                 android:background="@drawable/color_degradado"
-                android:text="personalized"
-                android:textColor="@color/dustyWhite" />
+                android:text="@string/personalized"
+                android:textAllCaps="false"
+                android:textColor="@color/dustyWhite"
+                android:textSize="18dp"/>
         </TableRow>
     </TableLayout>
 </LinearLayout>

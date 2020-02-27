@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MenuActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/grupo2" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-light"
+        android:text="OUR MENU"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp">
+
+            <Button
+                android:id="@+id/btn_coldDrink"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/color_degradado"
+                android:text="cold drinks"
+                android:textColor="@color/dustyWhite" />
+
+            <Button
+                android:id="@+id/btn_hotDrink"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/color_degradado"
+                android:text="cold drinks"
+                android:textColor="@color/dustyWhite" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp">
+
+            <Button
+                android:id="@+id/btn_sweets"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/color_degradado"
+                android:text="sweets"
+                android:textColor="@color/dustyWhite" />
+
+            <Button
+                android:id="@+id/btn_salties"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/color_degradado"
+                android:text="salties"
+                android:textColor="@color/dustyWhite" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_combos"
+                android:layout_marginRight="2dp"
+                android:background="@drawable/color_degradado"
+                android:text="combos"
+                android:textColor="@color/dustyWhite" />
+
+            <Button
+                android:id="@+id/btn_personalized"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/color_degradado"
+                android:text="personalized"
+                android:textColor="@color/dustyWhite" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

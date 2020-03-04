@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_height="100dp">
+
+    <ImageView
+        android:id="@+id/producto_img"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/caramelfrap"/>
+
+    <LinearLayout
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/producto_nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Caramel Frap"
+            android:textColor="#B60089"
+            android:textSize="20sp"
+            android:fontFamily="@string/condensed"
+            android:layout_marginHorizontal="10dp"/>
+
+        <TextView
+            android:id="@+id/producto_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Aqui va la descripcion"
+            android:textColor="#262525"
+            android:textSize="8sp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:layout_marginHorizontal="10dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/producto_precio"
+        android:layout_weight="0.5"
+        android:layout_width="0dp"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent"
+        android:layout_marginRight="15dp"
+        android:text="$7"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:textColor="#9E2E81"
+        android:textSize="19sp"/>
+
+</LinearLayout>

@@ -1,10 +1,9 @@
 package miguel.beltran.thecheezerymb
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_menu_registro.*
-import kotlinx.android.synthetic.main.activity_registro.*
 
 class MenuActivity : AppCompatActivity() {
 
@@ -12,29 +11,36 @@ class MenuActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu_registro)
 
-        btn_coldDrink.setOnClickListener({
-            val intent= Intent(this,Pantalla1::class.java)
+        btn_coldDrink.setOnClickListener {
             startActivity(intent)
-        })
-        btn_hotDrink.setOnClickListener({
-            val intent= Intent(this,Pantalla2::class.java)
+            val intent= Intent(this,ProductosActivity::class.java)
+            intent.putExtra("boton","coldDrinks")
             startActivity(intent)
-        })
-        btn_sweets.setOnClickListener({
-            val intent= Intent(this,Pantalla3::class.java)
+        }
+        btn_hotDrink.setOnClickListener {
+            val intent= Intent(this,ProductosActivity::class.java)
+            intent.putExtra("boton","hotDrinks")
             startActivity(intent)
-        })
-        btn_salties.setOnClickListener({
-            val intent= Intent(this,Pantalla4::class.java)
+        }
+        btn_sweets.setOnClickListener {
+            val intent= Intent(this,ProductosActivity::class.java)
+            intent.putExtra("boton","sweets")
             startActivity(intent)
-        })
-        btn_combos.setOnClickListener({
-            val intent= Intent(this,Pantalla5::class.java)
+        }
+        btn_salties.setOnClickListener {
+            val intent= Intent(this,ProductosActivity::class.java)
+            intent.putExtra("boton","salties")
             startActivity(intent)
-        })
-        btn_personalized.setOnClickListener({
-            val intent= Intent(this,Pantalla6::class.java)
+        }
+        btn_combos.setOnClickListener {
+            val intent= Intent(this,ProductosActivity::class.java)
+            intent.putExtra("boton","combox")
             startActivity(intent)
-        })
+        }
+        btn_personalized.setOnClickListener {
+            val intent= Intent(this,ProductosActivity::class.java)
+            intent.putExtra("boton","perzonalized")
+            startActivity(intent)
+        }
     }
 }

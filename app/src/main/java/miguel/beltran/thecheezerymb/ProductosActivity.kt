@@ -19,11 +19,11 @@ class ProductosActivity : AppCompatActivity() {
         setContentView(R.layout.activity_productos)
 
         when(getIntent().getStringExtra("boton")){
-            "coldDrink" ->{
+            "coldDrinks" ->{
                 img_productos.setImageResource(R.drawable.colddrinks)
                 cargarColdDrinks()
             }
-            "hotDrink"->{
+            "hotDrinks"->{
                 img_productos.setImageResource(R.drawable.hotdrinks)
                 cargarHotDrinks()
             }
@@ -34,6 +34,10 @@ class ProductosActivity : AppCompatActivity() {
             "salties"->{
                 img_productos.setImageResource(R.drawable.salties)
                 cargarSalties()
+            }
+            "combos"->{
+                img_productos.setImageResource(R.drawable.combos)
+                cargarCombos()
             }
             else->{
                 img_productos.setImageResource(R.drawable.colddrinks)
@@ -77,6 +81,14 @@ class ProductosActivity : AppCompatActivity() {
         listaProductos.add(Product("Panini", R.drawable.hampanini, "Sandwich made with Italian bread  served warmed by grilling.", 4))
         listaProductos.add(Product("Philly cheese steak", R.drawable. phillycheesesteak, "Smothered in grilled onions, green peppers, mushrooms, and Provolone.", 6))
         listaProductos.add(Product("Nachos", R.drawable. nachos, "Tortilla chips layered with beef and   melted cheddar cheese. Served with fried beans, guacamole, pico de gallo, and sour topping.",  7))
+    }
+
+    fun cargarCombos(){
+        listaProductos.add(Product("Cappuccino & Sandwich", R.drawable.cappuccinosub, "Medium sandwich sub accompanied with cappuccino", 7))
+        listaProductos.add(Product("Fajita Nachos", R.drawable.fajitanachos, "Fajita nachos topped with sour cream and guacamole accompanied with orange juice", 8))
+        listaProductos.add(Product("Healthy breakfast", R.drawable.fruitsandtoast, "Fresh sliced fruis, egg and guacamole toast accompanied with orange juice.", 9))
+        listaProductos.add(Product("Salties & Sweets", R.drawable.fruitssaladsweets, "Mix of sandwiches, sliced fruits fresh salad and a variety of sweets.", 13))
+        listaProductos.add(Product("Sandwich & Milkshake", R.drawable.sandwichmilkshake, "Grilled cheese sandwich and a milkshake.",  7))
     }
 
     private class AdaptadorProductos:BaseAdapter{

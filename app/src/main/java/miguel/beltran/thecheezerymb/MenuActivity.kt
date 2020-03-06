@@ -33,8 +33,7 @@ class MenuActivity : AppCompatActivity() {
             startActivity(intent)
         }
         btn_combos.setOnClickListener {
-            val intent= Intent(this,ProductosActivity::class.java)
-            intent.putExtra("boton","combos")
+            val intent= Intent(this,CombosActivity::class.java)
             startActivity(intent)
         }
         btn_personalized.setOnClickListener {
